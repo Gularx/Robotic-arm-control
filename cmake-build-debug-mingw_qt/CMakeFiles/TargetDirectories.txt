@@ -1,0 +1,4 @@
+D:/software/CLionProjects/CLI/cmake-build-debug-mingw_qt/CMakeFiles/CLI.dir
+D:/software/CLionProjects/CLI/cmake-build-debug-mingw_qt/CMakeFiles/edit_cache.dir
+D:/software/CLionProjects/CLI/cmake-build-debug-mingw_qt/CMakeFiles/rebuild_cache.dir
+D:/software/CLionProjects/CLI/cmake-build-debug-mingw_qt/CMakeFiles/CLI_autogen.dir

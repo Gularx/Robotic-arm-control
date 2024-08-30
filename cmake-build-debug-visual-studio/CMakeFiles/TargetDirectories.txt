@@ -1,3 +1,0 @@
-D:/software/CLionProjects/zexam/API_QtExample_CPP/cmake-build-debug-visual-studio/CMakeFiles/API_QT.dir
-D:/software/CLionProjects/zexam/API_QtExample_CPP/cmake-build-debug-visual-studio/CMakeFiles/edit_cache.dir
-D:/software/CLionProjects/zexam/API_QtExample_CPP/cmake-build-debug-visual-studio/CMakeFiles/rebuild_cache.dir

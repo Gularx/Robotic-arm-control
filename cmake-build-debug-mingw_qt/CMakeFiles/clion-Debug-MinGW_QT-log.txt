@@ -1,0 +1,14 @@
+"D:\software\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" -S D:\software\CLionProjects\CLI -B D:\software\CLionProjects\CLI\cmake-build-debug-mingw_qt
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Configuring done (2.1s)
+CMake Error at CMakeLists.txt:23 (add_executable):
+  Cannot find source file:
+
+    main.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+
+
+-- Generating done (0.0s)
+CMake Generate step failed.  Build files cannot be regenerated correctly.
