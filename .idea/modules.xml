@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/API_QtExample_CPP.iml" filepath="$PROJECT_DIR$/.idea/API_QtExample_CPP.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/Realman.iml" filepath="$PROJECT_DIR$/.idea/Realman.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/RM_QT_API.iml" filepath="$PROJECT_DIR$/.idea/RM_QT_API.iml" />
     </modules>
   </component>
 </project>

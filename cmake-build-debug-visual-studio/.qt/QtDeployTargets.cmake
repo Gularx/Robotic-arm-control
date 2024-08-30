@@ -1,2 +1,2 @@
-set(__QT_DEPLOY_TARGET_API_QT_FILE D:/software/CLionProjects/API_QtExample_CPP/cmake-build-debug-visual-studio/API_QT.exe)
-set(__QT_DEPLOY_TARGET_API_QT_RUNTIME_DLLS D:/software/Qt/6.7.0/mingw_64/bin/Qt6Widgets.dll;D:/software/Qt/6.7.0/mingw_64/bin/Qt6Multimedia.dll;D:/software/Qt/6.7.0/mingw_64/bin/Qt6Gui.dll;D:/software/Qt/6.7.0/mingw_64/bin/Qt6Network.dll;D:/software/Qt/6.7.0/mingw_64/bin/Qt6Core.dll)
+set(__QT_DEPLOY_TARGET_RM_QT_API_FILE D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/RM_QT_API.exe)
+set(__QT_DEPLOY_TARGET_RM_QT_API_RUNTIME_DLLS D:/software/QT/6.7.1/msvc2019_64/bin/Qt6Widgetsd.dll;D:/software/QT/6.7.1/msvc2019_64/bin/Qt6Multimediad.dll;D:/software/QT/6.7.1/msvc2019_64/bin/Qt6Guid.dll;D:/software/QT/6.7.1/msvc2019_64/bin/Qt6Networkd.dll;D:/software/QT/6.7.1/msvc2019_64/bin/Qt6Cored.dll)

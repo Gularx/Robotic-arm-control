@@ -1,8 +1,8 @@
-# Install script for directory: D:/software/CLionProjects/zexam/API_QtExample_CPP
+# Install script for directory: D:/software/CLionProjects/RM_QT_API
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/API_QT")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/RM_QT_API")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/software/CLionProjects/zexam/API_QtExample_CPP/cmake-build-debug-visual-studio/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

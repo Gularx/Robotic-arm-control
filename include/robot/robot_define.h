@@ -174,7 +174,7 @@ typedef struct
 
 typedef struct
 {
-    float k_g[ROBOT_DOF];                            //* parameters of gravity-regulation-factor of drag functionï¼Œ unit: 1
+    float k_g[ROBOT_DOF];                            //* parameters of gravity-regulation-factor of drag function£¬ unit: 1
     float k_f[ROBOT_DOF];                            //* parameters of friction-regulation-factor of drag function, unit: 1
     float k_l[ROBOT_DOF];                            //* parameters of joint payload-friction-constant, unit: 1
     float k_i[ROBOT_DOF];                            //* parameters of joint torque constant, unit: Nm/A
@@ -204,7 +204,7 @@ typedef struct
     short safety_level;                  //* Safety level of collision detection   
 } Robot;
 
-//å…­ç»´åŠ›æ‹–åŠ¨ç¤ºæ•™ç”¨
+//ÁùÎ¬Á¦ÍÏ¶¯Ê¾½ÌÓÃ
 typedef enum
 {
 	None_Teach = 0,
@@ -216,22 +216,22 @@ typedef enum
 
 
 
-//åŸºäºä¼ æ„Ÿå™¨çš„åŠ›æ§ç”¨
-//åŠ›ä¼ æ„Ÿå™¨æ ‡å®šç»“æœï¼ŒæˆåŠŸæˆ–å¤±è´¥
+//»ùÓÚ´«¸ĞÆ÷µÄÁ¦¿ØÓÃ
+//Á¦´«¸ĞÆ÷±ê¶¨½á¹û£¬³É¹¦»òÊ§°Ü
 typedef enum 
 {
     FAILED_CALIBRATION = 0,
     SUCCESSFUL_CALIBRATION = 1
 } CALIBRATION_RESULT;
 
-//æ–½åŠ åŠ›æ¨¡å¼
+//Ê©¼ÓÁ¦Ä£Ê½
 typedef enum 
 {
     BASE_MODE = 0,
     TOOL_MODE = 1
 } COORDINATE_SYSTERM_MODE;
 
-//åæ ‡ç³»æ–¹å‘
+//×ø±êÏµ·½Ïò
 typedef enum 
 {
     X_DIRECTION = 0,
@@ -243,27 +243,27 @@ typedef enum
 } COORDINATE_SYSTERM_DIRECTION;
 
 
-//è´¨å¿ƒç›¸å…³ç»“æ„ä½“
+//ÖÊĞÄÏà¹Ø½á¹¹Ìå
 typedef struct
 {
-	float rx;//è´¨å¿ƒxåæ ‡ï¼Œå•ä½ï¼šç±³
-	float ry;//è´¨å¿ƒyåæ ‡ï¼Œå•ä½ï¼šç±³
-	float rz;//è´¨å¿ƒzåæ ‡ï¼Œå•ä½ï¼šç±³
-	float f0[6];//é›¶ä½æ•°æ®ï¼Œå•ä½ï¼šNã€Nã€Nã€NMã€NMã€NM
-	Matrix G_b;//é‡åŠ›åœ¨åŸºåæ ‡ç³»ä¸‹çš„å‘é‡ï¼Œå•ä½N
+	float rx;//ÖÊĞÄx×ø±ê£¬µ¥Î»£ºÃ×
+	float ry;//ÖÊĞÄy×ø±ê£¬µ¥Î»£ºÃ×
+	float rz;//ÖÊĞÄz×ø±ê£¬µ¥Î»£ºÃ×
+	float f0[6];//ÁãÎ»Êı¾İ£¬µ¥Î»£ºN¡¢N¡¢N¡¢NM¡¢NM¡¢NM
+	Matrix G_b;//ÖØÁ¦ÔÚ»ù×ø±êÏµÏÂµÄÏòÁ¿£¬µ¥Î»N
 }Algo_Center_G;
 
-//å¤šç»„åŠ›çš„æ•°æ®
+//¶à×éÁ¦µÄÊı¾İ
 typedef struct
 {
-	float f[6];//å•ä½ï¼šNã€Nã€Nã€NMã€NMã€NM
+	float f[6];//µ¥Î»£ºN¡¢N¡¢N¡¢NM¡¢NM¡¢NM
 }multi_f;
-//å¤šç»„å…³èŠ‚è§’åº¦çš„æ•°æ®
+//¶à×é¹Ø½Ú½Ç¶ÈµÄÊı¾İ
 typedef struct
 {
-	float joint[7];//å•ä½ï¼šå¼§åº¦
+	float joint[7];//µ¥Î»£º»¡¶È
 }multi_joint;
-//è®¡ç®—è´¨å¿ƒç”¨åˆ°çš„ç»“æ„ä½“
+//¼ÆËãÖÊĞÄÓÃµ½µÄ½á¹¹Ìå
 typedef struct
 {
 	multi_f f_6[4];

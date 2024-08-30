@@ -46,10 +46,10 @@ RM = "D:\software\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\software\CLionProjects\zexam\API_QtExample_CPP
+CMAKE_SOURCE_DIR = D:\software\CLionProjects\RM_QT_API
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio
+CMAKE_BINARY_DIR = D:\software\CLionProjects\RM_QT_API\cmake-build-debug-visual-studio
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -76,9 +76,9 @@ rebuild_cache\fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\CMakeFiles D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\software\CLionProjects\RM_QT_API\cmake-build-debug-visual-studio\CMakeFiles D:\software\CLionProjects\RM_QT_API\cmake-build-debug-visual-studio\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\software\CLionProjects\RM_QT_API\cmake-build-debug-visual-studio\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -106,120 +106,205 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named API_QT
+# Target rules for targets named RM_QT_API
 
 # Build rule for target.
-API_QT: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) API_QT
-.PHONY : API_QT
+RM_QT_API: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) RM_QT_API
+.PHONY : RM_QT_API
 
 # fast build rule for target.
-API_QT\fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\API_QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\API_QT.dir\build
-.PHONY : API_QT\fast
+RM_QT_API\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\build
+.PHONY : RM_QT_API\fast
 
-Application\Basic_pose.obj: Application\Basic_pose.cpp.obj
-.PHONY : Application\Basic_pose.obj
+#=============================================================================
+# Target rules for targets named RM_QT_API_autogen
 
-# target to build an object file
-Application\Basic_pose.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\API_QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\API_QT.dir\Application\Basic_pose.cpp.obj
-.PHONY : Application\Basic_pose.cpp.obj
+# Build rule for target.
+RM_QT_API_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) RM_QT_API_autogen
+.PHONY : RM_QT_API_autogen
 
-Application\Basic_pose.i: Application\Basic_pose.cpp.i
-.PHONY : Application\Basic_pose.i
+# fast build rule for target.
+RM_QT_API_autogen\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API_autogen.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API_autogen.dir\build
+.PHONY : RM_QT_API_autogen\fast
 
-# target to preprocess a source file
-Application\Basic_pose.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\API_QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\API_QT.dir\Application\Basic_pose.cpp.i
-.PHONY : Application\Basic_pose.cpp.i
-
-Application\Basic_pose.s: Application\Basic_pose.cpp.s
-.PHONY : Application\Basic_pose.s
-
-# target to generate assembly for a file
-Application\Basic_pose.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\API_QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\API_QT.dir\Application\Basic_pose.cpp.s
-.PHONY : Application\Basic_pose.cpp.s
-
-Application\FF_init.obj: Application\FF_init.cpp.obj
-.PHONY : Application\FF_init.obj
+Application\Src\FF_init.obj: Application\Src\FF_init.cpp.obj
+.PHONY : Application\Src\FF_init.obj
 
 # target to build an object file
-Application\FF_init.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\API_QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\API_QT.dir\Application\FF_init.cpp.obj
-.PHONY : Application\FF_init.cpp.obj
+Application\Src\FF_init.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\Application\Src\FF_init.cpp.obj
+.PHONY : Application\Src\FF_init.cpp.obj
 
-Application\FF_init.i: Application\FF_init.cpp.i
-.PHONY : Application\FF_init.i
+Application\Src\FF_init.i: Application\Src\FF_init.cpp.i
+.PHONY : Application\Src\FF_init.i
 
 # target to preprocess a source file
-Application\FF_init.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\API_QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\API_QT.dir\Application\FF_init.cpp.i
-.PHONY : Application\FF_init.cpp.i
+Application\Src\FF_init.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\Application\Src\FF_init.cpp.i
+.PHONY : Application\Src\FF_init.cpp.i
 
-Application\FF_init.s: Application\FF_init.cpp.s
-.PHONY : Application\FF_init.s
+Application\Src\FF_init.s: Application\Src\FF_init.cpp.s
+.PHONY : Application\Src\FF_init.s
 
 # target to generate assembly for a file
-Application\FF_init.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\API_QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\API_QT.dir\Application\FF_init.cpp.s
-.PHONY : Application\FF_init.cpp.s
+Application\Src\FF_init.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\Application\Src\FF_init.cpp.s
+.PHONY : Application\Src\FF_init.cpp.s
 
-Application\MA_init.obj: Application\MA_init.cpp.obj
-.PHONY : Application\MA_init.obj
+Application\Src\MA_init.obj: Application\Src\MA_init.cpp.obj
+.PHONY : Application\Src\MA_init.obj
 
 # target to build an object file
-Application\MA_init.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\API_QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\API_QT.dir\Application\MA_init.cpp.obj
-.PHONY : Application\MA_init.cpp.obj
+Application\Src\MA_init.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\Application\Src\MA_init.cpp.obj
+.PHONY : Application\Src\MA_init.cpp.obj
 
-Application\MA_init.i: Application\MA_init.cpp.i
-.PHONY : Application\MA_init.i
+Application\Src\MA_init.i: Application\Src\MA_init.cpp.i
+.PHONY : Application\Src\MA_init.i
 
 # target to preprocess a source file
-Application\MA_init.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\API_QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\API_QT.dir\Application\MA_init.cpp.i
-.PHONY : Application\MA_init.cpp.i
+Application\Src\MA_init.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\Application\Src\MA_init.cpp.i
+.PHONY : Application\Src\MA_init.cpp.i
 
-Application\MA_init.s: Application\MA_init.cpp.s
-.PHONY : Application\MA_init.s
+Application\Src\MA_init.s: Application\Src\MA_init.cpp.s
+.PHONY : Application\Src\MA_init.s
 
 # target to generate assembly for a file
-Application\MA_init.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\API_QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\API_QT.dir\Application\MA_init.cpp.s
-.PHONY : Application\MA_init.cpp.s
+Application\Src\MA_init.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\Application\Src\MA_init.cpp.s
+.PHONY : Application\Src\MA_init.cpp.s
 
-Application\QT_set.obj: Application\QT_set.cpp.obj
-.PHONY : Application\QT_set.obj
+Application\Src\Open_memory.obj: Application\Src\Open_memory.cpp.obj
+.PHONY : Application\Src\Open_memory.obj
 
 # target to build an object file
-Application\QT_set.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\API_QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\API_QT.dir\Application\QT_set.cpp.obj
-.PHONY : Application\QT_set.cpp.obj
+Application\Src\Open_memory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\Application\Src\Open_memory.cpp.obj
+.PHONY : Application\Src\Open_memory.cpp.obj
 
-Application\QT_set.i: Application\QT_set.cpp.i
-.PHONY : Application\QT_set.i
+Application\Src\Open_memory.i: Application\Src\Open_memory.cpp.i
+.PHONY : Application\Src\Open_memory.i
 
 # target to preprocess a source file
-Application\QT_set.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\API_QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\API_QT.dir\Application\QT_set.cpp.i
-.PHONY : Application\QT_set.cpp.i
+Application\Src\Open_memory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\Application\Src\Open_memory.cpp.i
+.PHONY : Application\Src\Open_memory.cpp.i
 
-Application\QT_set.s: Application\QT_set.cpp.s
-.PHONY : Application\QT_set.s
+Application\Src\Open_memory.s: Application\Src\Open_memory.cpp.s
+.PHONY : Application\Src\Open_memory.s
 
 # target to generate assembly for a file
-Application\QT_set.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\API_QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\API_QT.dir\Application\QT_set.cpp.s
-.PHONY : Application\QT_set.cpp.s
+Application\Src\Open_memory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\Application\Src\Open_memory.cpp.s
+.PHONY : Application\Src\Open_memory.cpp.s
+
+Application\Src\QT_set.obj: Application\Src\QT_set.cpp.obj
+.PHONY : Application\Src\QT_set.obj
+
+# target to build an object file
+Application\Src\QT_set.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\Application\Src\QT_set.cpp.obj
+.PHONY : Application\Src\QT_set.cpp.obj
+
+Application\Src\QT_set.i: Application\Src\QT_set.cpp.i
+.PHONY : Application\Src\QT_set.i
+
+# target to preprocess a source file
+Application\Src\QT_set.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\Application\Src\QT_set.cpp.i
+.PHONY : Application\Src\QT_set.cpp.i
+
+Application\Src\QT_set.s: Application\Src\QT_set.cpp.s
+.PHONY : Application\Src\QT_set.s
+
+# target to generate assembly for a file
+Application\Src\QT_set.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\Application\Src\QT_set.cpp.s
+.PHONY : Application\Src\QT_set.cpp.s
+
+Application\Src\connect.obj: Application\Src\connect.cpp.obj
+.PHONY : Application\Src\connect.obj
+
+# target to build an object file
+Application\Src\connect.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\Application\Src\connect.cpp.obj
+.PHONY : Application\Src\connect.cpp.obj
+
+Application\Src\connect.i: Application\Src\connect.cpp.i
+.PHONY : Application\Src\connect.i
+
+# target to preprocess a source file
+Application\Src\connect.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\Application\Src\connect.cpp.i
+.PHONY : Application\Src\connect.cpp.i
+
+Application\Src\connect.s: Application\Src\connect.cpp.s
+.PHONY : Application\Src\connect.s
+
+# target to generate assembly for a file
+Application\Src\connect.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\Application\Src\connect.cpp.s
+.PHONY : Application\Src\connect.cpp.s
+
+Application\Src\connexts.obj: Application\Src\connexts.cpp.obj
+.PHONY : Application\Src\connexts.obj
+
+# target to build an object file
+Application\Src\connexts.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\Application\Src\connexts.cpp.obj
+.PHONY : Application\Src\connexts.cpp.obj
+
+Application\Src\connexts.i: Application\Src\connexts.cpp.i
+.PHONY : Application\Src\connexts.i
+
+# target to preprocess a source file
+Application\Src\connexts.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\Application\Src\connexts.cpp.i
+.PHONY : Application\Src\connexts.cpp.i
+
+Application\Src\connexts.s: Application\Src\connexts.cpp.s
+.PHONY : Application\Src\connexts.s
+
+# target to generate assembly for a file
+Application\Src\connexts.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\Application\Src\connexts.cpp.s
+.PHONY : Application\Src\connexts.cpp.s
+
+RM_QT_API_autogen\mocs_compilation.obj: RM_QT_API_autogen\mocs_compilation.cpp.obj
+.PHONY : RM_QT_API_autogen\mocs_compilation.obj
+
+# target to build an object file
+RM_QT_API_autogen\mocs_compilation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\RM_QT_API_autogen\mocs_compilation.cpp.obj
+.PHONY : RM_QT_API_autogen\mocs_compilation.cpp.obj
+
+RM_QT_API_autogen\mocs_compilation.i: RM_QT_API_autogen\mocs_compilation.cpp.i
+.PHONY : RM_QT_API_autogen\mocs_compilation.i
+
+# target to preprocess a source file
+RM_QT_API_autogen\mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\RM_QT_API_autogen\mocs_compilation.cpp.i
+.PHONY : RM_QT_API_autogen\mocs_compilation.cpp.i
+
+RM_QT_API_autogen\mocs_compilation.s: RM_QT_API_autogen\mocs_compilation.cpp.s
+.PHONY : RM_QT_API_autogen\mocs_compilation.s
+
+# target to generate assembly for a file
+RM_QT_API_autogen\mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\RM_QT_API_autogen\mocs_compilation.cpp.s
+.PHONY : RM_QT_API_autogen\mocs_compilation.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\API_QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\API_QT.dir\main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -227,7 +312,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\API_QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\API_QT.dir\main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -235,7 +320,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\API_QT.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\API_QT.dir\main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RM_QT_API.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\RM_QT_API.dir\main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -246,19 +331,29 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... API_QT
-	@echo ... Application/Basic_pose.obj
-	@echo ... Application/Basic_pose.i
-	@echo ... Application/Basic_pose.s
-	@echo ... Application/FF_init.obj
-	@echo ... Application/FF_init.i
-	@echo ... Application/FF_init.s
-	@echo ... Application/MA_init.obj
-	@echo ... Application/MA_init.i
-	@echo ... Application/MA_init.s
-	@echo ... Application/QT_set.obj
-	@echo ... Application/QT_set.i
-	@echo ... Application/QT_set.s
+	@echo ... RM_QT_API_autogen
+	@echo ... RM_QT_API
+	@echo ... Application/Src/FF_init.obj
+	@echo ... Application/Src/FF_init.i
+	@echo ... Application/Src/FF_init.s
+	@echo ... Application/Src/MA_init.obj
+	@echo ... Application/Src/MA_init.i
+	@echo ... Application/Src/MA_init.s
+	@echo ... Application/Src/Open_memory.obj
+	@echo ... Application/Src/Open_memory.i
+	@echo ... Application/Src/Open_memory.s
+	@echo ... Application/Src/QT_set.obj
+	@echo ... Application/Src/QT_set.i
+	@echo ... Application/Src/QT_set.s
+	@echo ... Application/Src/connect.obj
+	@echo ... Application/Src/connect.i
+	@echo ... Application/Src/connect.s
+	@echo ... Application/Src/connexts.obj
+	@echo ... Application/Src/connexts.i
+	@echo ... Application/Src/connexts.s
+	@echo ... RM_QT_API_autogen/mocs_compilation.obj
+	@echo ... RM_QT_API_autogen/mocs_compilation.i
+	@echo ... RM_QT_API_autogen/mocs_compilation.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
