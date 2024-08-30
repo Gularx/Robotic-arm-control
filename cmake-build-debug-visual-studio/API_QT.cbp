@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="API_QT"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/software/CLionProjects/zexam/API_QtExample_CPP/cmake-build-debug-visual-studio"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="API_QT">
+				<Option output="D:/software/CLionProjects/zexam/API_QtExample_CPP/cmake-build-debug-visual-studio/API_QT.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/software/CLionProjects/zexam/API_QtExample_CPP/cmake-build-debug-visual-studio"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/software/CLionProjects/zexam/API_QtExample_CPP/include/robot"/>
+					<Add directory="D:/software/CLionProjects/zexam/API_QtExample_CPP/include/haptic"/>
+					<Add directory="D:/software/CLionProjects/zexam/API_QtExample_CPP/Application"/>
+					<Add directory="D:\software\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="D:\software\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\Makefile VERBOSE=1 API_QT"/>
+					<CompileFile command="nmake /NOLOGO /f D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="API_QT/fast">
+				<Option output="D:/software/CLionProjects/zexam/API_QtExample_CPP/cmake-build-debug-visual-studio/API_QT.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/software/CLionProjects/zexam/API_QtExample_CPP/cmake-build-debug-visual-studio"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/software/CLionProjects/zexam/API_QtExample_CPP/include/robot"/>
+					<Add directory="D:/software/CLionProjects/zexam/API_QtExample_CPP/include/haptic"/>
+					<Add directory="D:/software/CLionProjects/zexam/API_QtExample_CPP/Application"/>
+					<Add directory="D:\software\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="D:\software\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\Makefile VERBOSE=1 API_QT/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/software/CLionProjects/zexam/API_QtExample_CPP/cmake-build-debug-visual-studio"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/software/CLionProjects/zexam/API_QtExample_CPP/cmake-build-debug-visual-studio"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\software\CLionProjects\zexam\API_QtExample_CPP\cmake-build-debug-visual-studio\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/software/CLionProjects/zexam/API_QtExample_CPP/Application/Basic_pose.cpp">
+			<Option target="API_QT"/>
+		</Unit>
+		<Unit filename="D:/software/CLionProjects/zexam/API_QtExample_CPP/Application/Basic_pose.h">
+			<Option target="API_QT"/>
+		</Unit>
+		<Unit filename="D:/software/CLionProjects/zexam/API_QtExample_CPP/Application/FF_init.cpp">
+			<Option target="API_QT"/>
+		</Unit>
+		<Unit filename="D:/software/CLionProjects/zexam/API_QtExample_CPP/Application/FF_init.h">
+			<Option target="API_QT"/>
+		</Unit>
+		<Unit filename="D:/software/CLionProjects/zexam/API_QtExample_CPP/Application/MA_init.cpp">
+			<Option target="API_QT"/>
+		</Unit>
+		<Unit filename="D:/software/CLionProjects/zexam/API_QtExample_CPP/Application/MA_init.h">
+			<Option target="API_QT"/>
+		</Unit>
+		<Unit filename="D:/software/CLionProjects/zexam/API_QtExample_CPP/Application/QT_set.cpp">
+			<Option target="API_QT"/>
+		</Unit>
+		<Unit filename="D:/software/CLionProjects/zexam/API_QtExample_CPP/Application/QT_set.h">
+			<Option target="API_QT"/>
+		</Unit>
+		<Unit filename="D:/software/CLionProjects/zexam/API_QtExample_CPP/main.cpp">
+			<Option target="API_QT"/>
+		</Unit>
+		<Unit filename="D:/software/CLionProjects/zexam/API_QtExample_CPP/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
