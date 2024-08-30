@@ -8,16 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/RM_autogen/mocs_compilation.cpp" "D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/RM.dir/RM_autogen/mocs_compilation.cpp.obj"
+  "D:/software/CLionProjects/rm/main.cpp" "D:/software/CLionProjects/rm/cmake-build-debug-visual-studio/CMakeFiles/rm.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "RM_autogen/include"
-  "D:/software/CLionProjects/RM_QT_API/include/robot"
-  "D:/software/CLionProjects/RM_QT_API/include/haptic"
-  "D:/software/CLionProjects/RM_QT_API/Application/Inc"
+  "D:/software/CLionProjects/rm/include"
   )
 
 # The set of dependency files which are needed:

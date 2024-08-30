@@ -39,7 +39,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
       
       The C compiler identification is MSVC, found in:
-        D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.exe
+        D:/software/CLionProjects/rm/cmake-build-debug-visual-studio/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.exe
       
   -
     kind: "message-v1"
@@ -72,7 +72,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
       
       The CXX compiler identification is MSVC, found in:
-        D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
+        D:/software/CLionProjects/rm/cmake-build-debug-visual-studio/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
       
   -
     kind: "try_compile-v1"
@@ -83,8 +83,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-h752ea"
-      binary: "D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-h752ea"
+      source: "D:/software/CLionProjects/rm/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-hktlpi"
+      binary: "D:/software/CLionProjects/rm/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-hktlpi"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -93,11 +93,11 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-h752ea
+        Change Dir: D:/software/CLionProjects/rm/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-hktlpi
         
-        Run Build Command(s):D:/software/CLion 2023.2.1/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_76562\\fast && 	"D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_76562.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_76562.dir\\build
-        Building C object CMakeFiles/cmTC_76562.dir/CMakeCCompilerABI.c.obj
-        	"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_76562.dir\\CMakeCCompilerABI.c.obj.d --working-dir=D:\\software\\CLionProjects\\RM_QT_API\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-h752ea --filter-prefix="" -- "D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe" @C:\\Windows\\TEMP\\nm294D.tmp
+        Run Build Command(s):D:/software/CLion 2023.2.1/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_9fb64\\fast && 	"D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_9fb64.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_9fb64.dir\\build
+        Building C object CMakeFiles/cmTC_9fb64.dir/CMakeCCompilerABI.c.obj
+        	"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_9fb64.dir\\CMakeCCompilerABI.c.obj.d --working-dir=D:\\software\\CLionProjects\\rm\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-hktlpi --filter-prefix="" -- "D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe" @C:\\Windows\\TEMP\\nm64EB.tmp
         NMAKE : fatal error U1077: “"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe"”: 返回代码“0xc0000409”
         Stop.
         NMAKE : fatal error U1077: “"D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"”: 返回代码“0x2”
@@ -112,8 +112,8 @@ events:
     checks:
       - "Check for working C compiler: D:/software/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe"
     directories:
-      source: "D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-ylgy85"
-      binary: "D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-ylgy85"
+      source: "D:/software/CLionProjects/rm/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-pp7wwz"
+      binary: "D:/software/CLionProjects/rm/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-pp7wwz"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -122,26 +122,26 @@ events:
       variable: "CMAKE_C_COMPILER_WORKS"
       cached: true
       stdout: |
-        Change Dir: D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-ylgy85
+        Change Dir: D:/software/CLionProjects/rm/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-pp7wwz
         
-        Run Build Command(s):D:/software/CLion 2023.2.1/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_7ade4\\fast && 	"D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_7ade4.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_7ade4.dir\\build
-        Building C object CMakeFiles/cmTC_7ade4.dir/testCCompiler.c.obj
-        	"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_7ade4.dir\\testCCompiler.c.obj.d --working-dir=D:\\software\\CLionProjects\\RM_QT_API\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-ylgy85 --filter-prefix="" -- "D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe" @C:\\Windows\\TEMP\\nm2AB5.tmp
-        Linking C executable cmTC_7ade4.exe
-        	"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_7ade4.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\mt.exe" --manifests -- "D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe" /nologo @CMakeFiles\\cmTC_7ade4.dir\\objects1.rsp @C:\\Windows\\TEMP\\nm2B52.tmp
+        Run Build Command(s):D:/software/CLion 2023.2.1/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_51ff8\\fast && 	"D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_51ff8.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_51ff8.dir\\build
+        Building C object CMakeFiles/cmTC_51ff8.dir/testCCompiler.c.obj
+        	"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_51ff8.dir\\testCCompiler.c.obj.d --working-dir=D:\\software\\CLionProjects\\rm\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-pp7wwz --filter-prefix="" -- "D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe" @C:\\Windows\\TEMP\\nm6662.tmp
+        Linking C executable cmTC_51ff8.exe
+        	"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_51ff8.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\mt.exe" --manifests -- "D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe" /nologo @CMakeFiles\\cmTC_51ff8.dir\\objects1.rsp @C:\\Windows\\TEMP\\nm670E.tmp
         Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_7ade4.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_7ade4.dir/embed.manifest
+        Create CMakeFiles\\cmTC_51ff8.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_51ff8.dir/embed.manifest
         RC Pass 1:
-        D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_7ade4.dir/manifest.res CMakeFiles\\cmTC_7ade4.dir/manifest.rc
+        D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_51ff8.dir/manifest.res CMakeFiles\\cmTC_51ff8.dir/manifest.rc
         LINK Pass 1:
-        D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_7ade4.dir\\objects1.rsp /out:cmTC_7ade4.exe /implib:cmTC_7ade4.lib /pdb:D:\\software\\CLionProjects\\RM_QT_API\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-ylgy85\\cmTC_7ade4.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_7ade4.dir/intermediate.manifest CMakeFiles\\cmTC_7ade4.dir/manifest.res
+        D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_51ff8.dir\\objects1.rsp /out:cmTC_51ff8.exe /implib:cmTC_51ff8.lib /pdb:D:\\software\\CLionProjects\\rm\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-pp7wwz\\cmTC_51ff8.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_51ff8.dir/intermediate.manifest CMakeFiles\\cmTC_51ff8.dir/manifest.res
         MT:
-        D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_7ade4.dir/intermediate.manifest /out:CMakeFiles\\cmTC_7ade4.dir/embed.manifest /notify_update
+        D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_51ff8.dir/intermediate.manifest /out:CMakeFiles\\cmTC_51ff8.dir/embed.manifest /notify_update
         RC Pass 2:
-        D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_7ade4.dir/manifest.res CMakeFiles\\cmTC_7ade4.dir/manifest.rc
+        D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_51ff8.dir/manifest.res CMakeFiles\\cmTC_51ff8.dir/manifest.rc
         FINAL LINK:
-        D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_7ade4.dir\\objects1.rsp /out:cmTC_7ade4.exe /implib:cmTC_7ade4.lib /pdb:D:\\software\\CLionProjects\\RM_QT_API\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-ylgy85\\cmTC_7ade4.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_7ade4.dir/intermediate.manifest CMakeFiles\\cmTC_7ade4.dir/manifest.res
+        D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_51ff8.dir\\objects1.rsp /out:cmTC_51ff8.exe /implib:cmTC_51ff8.lib /pdb:D:\\software\\CLionProjects\\rm\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-pp7wwz\\cmTC_51ff8.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_51ff8.dir/intermediate.manifest CMakeFiles\\cmTC_51ff8.dir/manifest.res
         
       exitCode: 0
   -
@@ -153,8 +153,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-ffkxsb"
-      binary: "D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-ffkxsb"
+      source: "D:/software/CLionProjects/rm/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-kw4zvp"
+      binary: "D:/software/CLionProjects/rm/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-kw4zvp"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -163,11 +163,11 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-ffkxsb
+        Change Dir: D:/software/CLionProjects/rm/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-kw4zvp
         
-        Run Build Command(s):D:/software/CLion 2023.2.1/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_29735\\fast && 	"D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_29735.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_29735.dir\\build
-        Building CXX object CMakeFiles/cmTC_29735.dir/CMakeCXXCompilerABI.cpp.obj
-        	"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_29735.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=D:\\software\\CLionProjects\\RM_QT_API\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-ffkxsb --filter-prefix="" -- "D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe" @C:\\Windows\\TEMP\\nm2D93.tmp
+        Run Build Command(s):D:/software/CLion 2023.2.1/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_278c4\\fast && 	"D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_278c4.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_278c4.dir\\build
+        Building CXX object CMakeFiles/cmTC_278c4.dir/CMakeCXXCompilerABI.cpp.obj
+        	"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_278c4.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=D:\\software\\CLionProjects\\rm\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-kw4zvp --filter-prefix="" -- "D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe" @C:\\Windows\\TEMP\\nm6940.tmp
         NMAKE : fatal error U1077: “"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe"”: 返回代码“0xc0000409”
         Stop.
         NMAKE : fatal error U1077: “"D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"”: 返回代码“0x2”
@@ -182,8 +182,8 @@ events:
     checks:
       - "Check for working CXX compiler: D:/software/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe"
     directories:
-      source: "D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-3ictv9"
-      binary: "D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-3ictv9"
+      source: "D:/software/CLionProjects/rm/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-qyvlp6"
+      binary: "D:/software/CLionProjects/rm/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-qyvlp6"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -192,231 +192,26 @@ events:
       variable: "CMAKE_CXX_COMPILER_WORKS"
       cached: true
       stdout: |
-        Change Dir: D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-3ictv9
+        Change Dir: D:/software/CLionProjects/rm/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-qyvlp6
         
-        Run Build Command(s):D:/software/CLion 2023.2.1/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_b9552\\fast && 	"D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_b9552.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_b9552.dir\\build
-        Building CXX object CMakeFiles/cmTC_b9552.dir/testCXXCompiler.cxx.obj
-        	"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_b9552.dir\\testCXXCompiler.cxx.obj.d --working-dir=D:\\software\\CLionProjects\\RM_QT_API\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-3ictv9 --filter-prefix="" -- "D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe" @C:\\Windows\\TEMP\\nm2EDB.tmp
-        Linking CXX executable cmTC_b9552.exe
-        	"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_b9552.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\mt.exe" --manifests -- "D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe" /nologo @CMakeFiles\\cmTC_b9552.dir\\objects1.rsp @C:\\Windows\\TEMP\\nm2FB7.tmp
+        Run Build Command(s):D:/software/CLion 2023.2.1/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_1e6d8\\fast && 	"D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_1e6d8.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_1e6d8.dir\\build
+        Building CXX object CMakeFiles/cmTC_1e6d8.dir/testCXXCompiler.cxx.obj
+        	"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_1e6d8.dir\\testCXXCompiler.cxx.obj.d --working-dir=D:\\software\\CLionProjects\\rm\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-qyvlp6 --filter-prefix="" -- "D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe" @C:\\Windows\\TEMP\\nm6A88.tmp
+        Linking CXX executable cmTC_1e6d8.exe
+        	"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_1e6d8.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\mt.exe" --manifests -- "D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe" /nologo @CMakeFiles\\cmTC_1e6d8.dir\\objects1.rsp @C:\\Windows\\TEMP\\nm6B45.tmp
         Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_b9552.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_b9552.dir/embed.manifest
+        Create CMakeFiles\\cmTC_1e6d8.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_1e6d8.dir/embed.manifest
         RC Pass 1:
-        D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_b9552.dir/manifest.res CMakeFiles\\cmTC_b9552.dir/manifest.rc
+        D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_1e6d8.dir/manifest.res CMakeFiles\\cmTC_1e6d8.dir/manifest.rc
         LINK Pass 1:
-        D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_b9552.dir\\objects1.rsp /out:cmTC_b9552.exe /implib:cmTC_b9552.lib /pdb:D:\\software\\CLionProjects\\RM_QT_API\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-3ictv9\\cmTC_b9552.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_b9552.dir/intermediate.manifest CMakeFiles\\cmTC_b9552.dir/manifest.res
+        D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_1e6d8.dir\\objects1.rsp /out:cmTC_1e6d8.exe /implib:cmTC_1e6d8.lib /pdb:D:\\software\\CLionProjects\\rm\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-qyvlp6\\cmTC_1e6d8.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_1e6d8.dir/intermediate.manifest CMakeFiles\\cmTC_1e6d8.dir/manifest.res
         MT:
-        D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_b9552.dir/intermediate.manifest /out:CMakeFiles\\cmTC_b9552.dir/embed.manifest /notify_update
+        D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_1e6d8.dir/intermediate.manifest /out:CMakeFiles\\cmTC_1e6d8.dir/embed.manifest /notify_update
         RC Pass 2:
-        D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_b9552.dir/manifest.res CMakeFiles\\cmTC_b9552.dir/manifest.rc
+        D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_1e6d8.dir/manifest.res CMakeFiles\\cmTC_1e6d8.dir/manifest.rc
         FINAL LINK:
-        D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_b9552.dir\\objects1.rsp /out:cmTC_b9552.exe /implib:cmTC_b9552.lib /pdb:D:\\software\\CLionProjects\\RM_QT_API\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-3ictv9\\cmTC_b9552.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_b9552.dir/intermediate.manifest CMakeFiles\\cmTC_b9552.dir/manifest.res
+        D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_1e6d8.dir\\objects1.rsp /out:cmTC_1e6d8.exe /implib:cmTC_1e6d8.lib /pdb:D:\\software\\CLionProjects\\rm\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-qyvlp6\\cmTC_1e6d8.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_1e6d8.dir/intermediate.manifest CMakeFiles\\cmTC_1e6d8.dir/manifest.res
         
       exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "D:/software/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "D:/software/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
-      - "D:/software/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
-      - "D:/software/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake:163 (_threads_check_libc)"
-      - "D:/software/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
-      - "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
-      - "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/Qt6Dependencies.cmake:27 (_qt_internal_find_third_party_dependencies)"
-      - "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake:124 (include)"
-      - "CMakeLists.txt:12 (find_package)"
-    checks:
-      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
-    directories:
-      source: "D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-ytyx5o"
-      binary: "D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-ytyx5o"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
-      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6;D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
-    buildResult:
-      variable: "CMAKE_HAVE_LIBC_PTHREAD"
-      cached: true
-      stdout: |
-        Change Dir: D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-ytyx5o
-        
-        Run Build Command(s):D:/software/CLion 2023.2.1/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_46761\\fast && 	"D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_46761.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_46761.dir\\build
-        Building C object CMakeFiles/cmTC_46761.dir/src.c.obj
-        	"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_46761.dir\\src.c.obj.d --working-dir=D:\\software\\CLionProjects\\RM_QT_API\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-ytyx5o --filter-prefix="" -- "D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe" @C:\\Windows\\TEMP\\nm31F8.tmp
-        NMAKE : fatal error U1077: “"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe"”: 返回代码“0xc0000409”
-        Stop.
-        NMAKE : fatal error U1077: “"D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"”: 返回代码“0x2”
-        Stop.
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "D:/software/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
-      - "D:/software/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
-      - "D:/software/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake:175 (_threads_check_lib)"
-      - "D:/software/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
-      - "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
-      - "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/Qt6Dependencies.cmake:27 (_qt_internal_find_third_party_dependencies)"
-      - "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake:124 (include)"
-      - "CMakeLists.txt:12 (find_package)"
-    checks:
-      - "Looking for pthread_create in pthreads"
-    directories:
-      source: "D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-rpdggo"
-      binary: "D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-rpdggo"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
-      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6;D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
-    buildResult:
-      variable: "CMAKE_HAVE_PTHREADS_CREATE"
-      cached: true
-      stdout: |
-        Change Dir: D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-rpdggo
-        
-        Run Build Command(s):D:/software/CLion 2023.2.1/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_3f224\\fast && 	"D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_3f224.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_3f224.dir\\build
-        Building C object CMakeFiles/cmTC_3f224.dir/CheckFunctionExists.c.obj
-        	"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_3f224.dir\\CheckFunctionExists.c.obj.d --working-dir=D:\\software\\CLionProjects\\RM_QT_API\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-rpdggo --filter-prefix="" -- "D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe" @C:\\Windows\\TEMP\\nm335F.tmp
-        Linking C executable cmTC_3f224.exe
-        	"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_3f224.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\mt.exe" --manifests -- "D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe" /nologo @CMakeFiles\\cmTC_3f224.dir\\objects1.rsp @C:\\Windows\\TEMP\\nm33FD.tmp
-        Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_3f224.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_3f224.dir/embed.manifest
-        RC Pass 1:
-        D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_3f224.dir/manifest.res CMakeFiles\\cmTC_3f224.dir/manifest.rc
-        LINK Pass 1:
-        D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_3f224.dir\\objects1.rsp /out:cmTC_3f224.exe /implib:cmTC_3f224.lib /pdb:D:\\software\\CLionProjects\\RM_QT_API\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-rpdggo\\cmTC_3f224.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_3f224.dir/intermediate.manifest CMakeFiles\\cmTC_3f224.dir/manifest.res
-        LINK Pass 1: command "D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_3f224.dir\\objects1.rsp /out:cmTC_3f224.exe /implib:cmTC_3f224.lib /pdb:D:\\software\\CLionProjects\\RM_QT_API\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-rpdggo\\cmTC_3f224.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_3f224.dir/intermediate.manifest CMakeFiles\\cmTC_3f224.dir/manifest.res" failed (exit code 1104) with the following output:
-        LINK : fatal error LNK1104: 无法打开文件“pthreads.lib”
-        NMAKE : fatal error U1077: “"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe"”: 返回代码“0xffffffff”
-        Stop.
-        NMAKE : fatal error U1077: “"D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"”: 返回代码“0x2”
-        Stop.
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "D:/software/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
-      - "D:/software/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
-      - "D:/software/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake:176 (_threads_check_lib)"
-      - "D:/software/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
-      - "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
-      - "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/Qt6Dependencies.cmake:27 (_qt_internal_find_third_party_dependencies)"
-      - "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake:124 (include)"
-      - "CMakeLists.txt:12 (find_package)"
-    checks:
-      - "Looking for pthread_create in pthread"
-    directories:
-      source: "D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-zuxrll"
-      binary: "D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-zuxrll"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
-      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6;D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
-    buildResult:
-      variable: "CMAKE_HAVE_PTHREAD_CREATE"
-      cached: true
-      stdout: |
-        Change Dir: D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-zuxrll
-        
-        Run Build Command(s):D:/software/CLion 2023.2.1/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_8964c\\fast && 	"D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_8964c.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_8964c.dir\\build
-        Building C object CMakeFiles/cmTC_8964c.dir/CheckFunctionExists.c.obj
-        	"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_8964c.dir\\CheckFunctionExists.c.obj.d --working-dir=D:\\software\\CLionProjects\\RM_QT_API\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-zuxrll --filter-prefix="" -- "D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe" @C:\\Windows\\TEMP\\nm3525.tmp
-        Linking C executable cmTC_8964c.exe
-        	"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_8964c.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\mt.exe" --manifests -- "D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe" /nologo @CMakeFiles\\cmTC_8964c.dir\\objects1.rsp @C:\\Windows\\TEMP\\nm35D1.tmp
-        Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_8964c.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_8964c.dir/embed.manifest
-        RC Pass 1:
-        D:\\Windows Kits\\10\\bin\\10.0.19041.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_8964c.dir/manifest.res CMakeFiles\\cmTC_8964c.dir/manifest.rc
-        LINK Pass 1:
-        D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_8964c.dir\\objects1.rsp /out:cmTC_8964c.exe /implib:cmTC_8964c.lib /pdb:D:\\software\\CLionProjects\\RM_QT_API\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-zuxrll\\cmTC_8964c.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_8964c.dir/intermediate.manifest CMakeFiles\\cmTC_8964c.dir/manifest.res
-        LINK Pass 1: command "D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_8964c.dir\\objects1.rsp /out:cmTC_8964c.exe /implib:cmTC_8964c.lib /pdb:D:\\software\\CLionProjects\\RM_QT_API\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-zuxrll\\cmTC_8964c.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_8964c.dir/intermediate.manifest CMakeFiles\\cmTC_8964c.dir/manifest.res" failed (exit code 1104) with the following output:
-        LINK : fatal error LNK1104: 无法打开文件“pthread.lib”
-        NMAKE : fatal error U1077: “"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe"”: 返回代码“0xffffffff”
-        Stop.
-        NMAKE : fatal error U1077: “"D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"”: 返回代码“0x2”
-        Stop.
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "D:/software/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "D:/software/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
-      - "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/FindWrapAtomic.cmake:36 (check_cxx_source_compiles)"
-      - "D:/software/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
-      - "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
-      - "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:33 (_qt_internal_find_third_party_dependencies)"
-      - "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:45 (include)"
-      - "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake:169 (find_package)"
-      - "CMakeLists.txt:12 (find_package)"
-    checks:
-      - "Performing Test HAVE_STDATOMIC"
-    directories:
-      source: "D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-iidd4p"
-      binary: "D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-iidd4p"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
-      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6;D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
-    buildResult:
-      variable: "HAVE_STDATOMIC"
-      cached: true
-      stdout: |
-        Change Dir: D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-iidd4p
-        
-        Run Build Command(s):D:/software/CLion 2023.2.1/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_9299f\\fast && 	"D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_9299f.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_9299f.dir\\build
-        Building CXX object CMakeFiles/cmTC_9299f.dir/src.cxx.obj
-        	"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_9299f.dir\\src.cxx.obj.d --working-dir=D:\\software\\CLionProjects\\RM_QT_API\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-iidd4p --filter-prefix="" -- "D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe" @C:\\Windows\\TEMP\\nm3738.tmp
-        NMAKE : fatal error U1077: “"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe"”: 返回代码“0xc0000409”
-        Stop.
-        NMAKE : fatal error U1077: “"D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"”: 返回代码“0x2”
-        Stop.
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "D:/software/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "D:/software/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
-      - "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/FindWrapAtomic.cmake:41 (check_cxx_source_compiles)"
-      - "D:/software/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
-      - "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
-      - "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:33 (_qt_internal_find_third_party_dependencies)"
-      - "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:45 (include)"
-      - "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake:169 (find_package)"
-      - "CMakeLists.txt:12 (find_package)"
-    checks:
-      - "Performing Test HAVE_STDATOMIC_WITH_LIB"
-    directories:
-      source: "D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-y2kiww"
-      binary: "D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-y2kiww"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
-      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6;D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;D:/software/QT/6.7.1/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
-    buildResult:
-      variable: "HAVE_STDATOMIC_WITH_LIB"
-      cached: true
-      stdout: |
-        Change Dir: D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-y2kiww
-        
-        Run Build Command(s):D:/software/CLion 2023.2.1/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_d8335\\fast && 	"D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_d8335.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_d8335.dir\\build
-        Building CXX object CMakeFiles/cmTC_d8335.dir/src.cxx.obj
-        	"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_d8335.dir\\src.cxx.obj.d --working-dir=D:\\software\\CLionProjects\\RM_QT_API\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-y2kiww --filter-prefix="" -- "D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe" @C:\\Windows\\TEMP\\nm38CE.tmp
-        NMAKE : fatal error U1077: “"D:\\software\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\bin\\cmake.exe"”: 返回代码“0xc0000409”
-        Stop.
-        NMAKE : fatal error U1077: “"D:\\software\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\nmake.exe"”: 返回代码“0x2”
-        Stop.
-        
-      exitCode: 2
 ...

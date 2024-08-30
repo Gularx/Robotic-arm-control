@@ -42,62 +42,62 @@ RM = "D:\software\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\software\CLionProjects\RM_QT_API
+CMAKE_SOURCE_DIR = D:\software\CLionProjects\rm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\software\CLionProjects\RM_QT_API\cmake-build-debug-visual-studio
+CMAKE_BINARY_DIR = D:\software\CLionProjects\rm\cmake-build-debug-visual-studio
 
 # Include any dependencies generated for this target.
-include CMakeFiles\RM.dir\depend.make
+include CMakeFiles\rm.dir\depend.make
 # Include the progress variables for this target.
-include CMakeFiles\RM.dir\progress.make
+include CMakeFiles\rm.dir\progress.make
 
 # Include the compile flags for this target's objects.
-include CMakeFiles\RM.dir\flags.make
+include CMakeFiles\rm.dir\flags.make
 
-CMakeFiles\RM.dir\RM_autogen\mocs_compilation.cpp.obj: CMakeFiles\RM.dir\flags.make
-CMakeFiles\RM.dir\RM_autogen\mocs_compilation.cpp.obj: RM_autogen\mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\software\CLionProjects\RM_QT_API\cmake-build-debug-visual-studio\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RM.dir/RM_autogen/mocs_compilation.cpp.obj"
+CMakeFiles\rm.dir\main.cpp.obj: CMakeFiles\rm.dir\flags.make
+CMakeFiles\rm.dir\main.cpp.obj: D:\software\CLionProjects\rm\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\software\CLionProjects\rm\cmake-build-debug-visual-studio\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rm.dir/main.cpp.obj"
 	"D:\software\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x64\cl.exe" @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\RM.dir\RM_autogen\mocs_compilation.cpp.obj /FdCMakeFiles\RM.dir\ /FS -c D:\software\CLionProjects\RM_QT_API\cmake-build-debug-visual-studio\RM_autogen\mocs_compilation.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\rm.dir\main.cpp.obj /FdCMakeFiles\rm.dir\ /FS -c D:\software\CLionProjects\rm\main.cpp
 <<
 
-CMakeFiles\RM.dir\RM_autogen\mocs_compilation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RM.dir/RM_autogen/mocs_compilation.cpp.i"
-	"D:\software\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x64\cl.exe" > CMakeFiles\RM.dir\RM_autogen\mocs_compilation.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\software\CLionProjects\RM_QT_API\cmake-build-debug-visual-studio\RM_autogen\mocs_compilation.cpp
+CMakeFiles\rm.dir\main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rm.dir/main.cpp.i"
+	"D:\software\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x64\cl.exe" > CMakeFiles\rm.dir\main.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\software\CLionProjects\rm\main.cpp
 <<
 
-CMakeFiles\RM.dir\RM_autogen\mocs_compilation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RM.dir/RM_autogen/mocs_compilation.cpp.s"
+CMakeFiles\rm.dir\main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rm.dir/main.cpp.s"
 	"D:\software\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x64\cl.exe" @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\RM.dir\RM_autogen\mocs_compilation.cpp.s /c D:\software\CLionProjects\RM_QT_API\cmake-build-debug-visual-studio\RM_autogen\mocs_compilation.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\rm.dir\main.cpp.s /c D:\software\CLionProjects\rm\main.cpp
 <<
 
-# Object files for target RM
-RM_OBJECTS = \
-"CMakeFiles\RM.dir\RM_autogen\mocs_compilation.cpp.obj"
+# Object files for target rm
+rm_OBJECTS = \
+"CMakeFiles\rm.dir\main.cpp.obj"
 
-# External object files for target RM
-RM_EXTERNAL_OBJECTS =
+# External object files for target rm
+rm_EXTERNAL_OBJECTS =
 
-RM.exe: CMakeFiles\RM.dir\RM_autogen\mocs_compilation.cpp.obj
-RM.exe: CMakeFiles\RM.dir\build.make
-RM.exe: CMakeFiles\RM.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\software\CLionProjects\RM_QT_API\cmake-build-debug-visual-studio\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable RM.exe"
-	"D:\software\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\RM.dir --rc="D:\Windows Kits\10\bin\10.0.19041.0\x64\rc.exe" --mt="D:\Windows Kits\10\bin\10.0.19041.0\x64\mt.exe" --manifests -- "D:\software\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x64\link.exe" /nologo @CMakeFiles\RM.dir\objects1.rsp @<<
- /out:RM.exe /implib:RM.lib /pdb:D:\software\CLionProjects\RM_QT_API\cmake-build-debug-visual-studio\RM.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console   -LIBPATH:D:\software\CLionProjects\RM_QT_API\lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+rm.exe: CMakeFiles\rm.dir\main.cpp.obj
+rm.exe: CMakeFiles\rm.dir\build.make
+rm.exe: CMakeFiles\rm.dir\objects1.rsp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\software\CLionProjects\rm\cmake-build-debug-visual-studio\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable rm.exe"
+	"D:\software\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\rm.dir --rc="D:\Windows Kits\10\bin\10.0.19041.0\x64\rc.exe" --mt="D:\Windows Kits\10\bin\10.0.19041.0\x64\mt.exe" --manifests -- "D:\software\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x64\link.exe" /nologo @CMakeFiles\rm.dir\objects1.rsp @<<
+ /out:rm.exe /implib:rm.lib /pdb:D:\software\CLionProjects\rm\cmake-build-debug-visual-studio\rm.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console   -LIBPATH:D:\software\CLionProjects\rm\lib  dhdms64.lib drdms64.lib RM_Serviced.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
 
 # Rule to build all files generated by this target.
-CMakeFiles\RM.dir\build: RM.exe
-.PHONY : CMakeFiles\RM.dir\build
+CMakeFiles\rm.dir\build: rm.exe
+.PHONY : CMakeFiles\rm.dir\build
 
-CMakeFiles\RM.dir\clean:
-	$(CMAKE_COMMAND) -P CMakeFiles\RM.dir\cmake_clean.cmake
-.PHONY : CMakeFiles\RM.dir\clean
+CMakeFiles\rm.dir\clean:
+	$(CMAKE_COMMAND) -P CMakeFiles\rm.dir\cmake_clean.cmake
+.PHONY : CMakeFiles\rm.dir\clean
 
-CMakeFiles\RM.dir\depend:
-	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" D:\software\CLionProjects\RM_QT_API D:\software\CLionProjects\RM_QT_API D:\software\CLionProjects\RM_QT_API\cmake-build-debug-visual-studio D:\software\CLionProjects\RM_QT_API\cmake-build-debug-visual-studio D:\software\CLionProjects\RM_QT_API\cmake-build-debug-visual-studio\CMakeFiles\RM.dir\DependInfo.cmake --color=$(COLOR)
-.PHONY : CMakeFiles\RM.dir\depend
+CMakeFiles\rm.dir\depend:
+	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" D:\software\CLionProjects\rm D:\software\CLionProjects\rm D:\software\CLionProjects\rm\cmake-build-debug-visual-studio D:\software\CLionProjects\rm\cmake-build-debug-visual-studio D:\software\CLionProjects\rm\cmake-build-debug-visual-studio\CMakeFiles\rm.dir\DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles\rm.dir\depend
 

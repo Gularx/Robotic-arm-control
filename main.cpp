@@ -1,70 +1,229 @@
-#include "MA_init.h"
-#include "FF_init.h"
-#include "QT_set.h"
-#include "connect.h"
-#include<chrono>
-#include<thread>
+#include "rm_base.h"
+#include "rm_service.h"
+#include "rm_define.h"
+#include "robot_define.h"
 
-#include <QApplication>
-#include <QWidget>
-#include <QPushButton>
+#include "dhdc.h"
+#include "drdc.h"
 
-const int port = 8090;      ///ç«¯å£
-float robotForce[6] = {0};    ///     å¤–åŠ›æ¥æ”¶
+#include <iostream>
+#include <chrono>
+#include <thread>
+#include <string>
+#include <cmath>
 
-RobotStatus robotData;
+#define REFRESH_INTERVAL  0.05    //s
+//#define DHD_DEVICE_SIGMA331   //ÓÒÊÖ
+//#define DHD_DEVICE_SIGMA331_LEFT  //×óÊÖ
 
-///å¤„ç†å…­ç»´åŠ›å‡½æ•°
-void MCallback(RobotStatus data) {
-    robotForce[0] = data.force_sensor.force[0];
-    robotForce[1] = data.force_sensor.force[1];
-    robotForce[2] = data.force_sensor.force[2];
-    robotForce[3] = data.force_sensor.force[3];
-    robotForce[4] = data.force_sensor.force[4];
-    robotForce[5] = data.force_sensor.force[5];
-    robotData = data;
-}
 
-/// æ¥æ”¶å…­ç»´åŠ›ä¿¡å·çš„çº¿ç¨‹å‡½æ•°
-void processForceSignal() {
-    RobotStatusListener RobotStatuscallback = MCallback;
-    while (true) {
-        Realtime_Arm_Joint_State(port, RobotStatuscallback);
-        std::this_thread::sleep_for(std::chrono::milliseconds(20));
+
+#define _USE_MATH_DEFINES
+using namespace std;
+
+// ¶¨ÒåĞı×ª½Ç¶È£¨ÒÔ»¡¶È±íÊ¾£©
+const double angle = -135.0 * PI / 180.0;
+
+// ¶¨ÒåÈÆzÖáĞı×ª-135¶ÈµÄĞı×ª¾ØÕó
+const double rotationMatrix[3][3] = {
+    {cos(angle), -sin(angle), 0},
+    {sin(angle), cos(angle), 0},
+    {0, 0, 1}
+};
+
+int main()
+{
+
+    double t1, t0 = dhdGetTime();
+    double t3, t4 = dhdGetTime();
+    int ret = -1;
+    double px, py, pz;
+    double fx, fy, fz;
+    double freq = 0.0;
+    double oa, ob, og;
+    float k = 2;
+    int done = 0;
+
+    /// ³õÊ¼»¯Á¬½Ó»úĞµ±Û
+    auto m_pApi = new RM_Service();
+    m_pApi->Service_RM_API_Init(75, NULL);
+    SOCKHANDLE ArmSocket = -1;
+    ArmSocket = m_pApi->Service_Arm_Socket_Start((char*)"192.168.1.20", 8080, 5000);
+    cout << ArmSocket << endl;
+
+// ´´½¨ÁËÒ»¸öÃûÎªm_pApiµÄÖ¸ÏòRM_Service¶ÔÏóµÄÖ¸Õë£¬²¢Ê¹ÓÃnewÔËËã·ûÔÚ¶ÑÉÏ·ÖÅäÁËÄÚ´æ¿Õ¼ä¡£
+// API³õÊ¼»¯, 75: Ä¿±êÉè±¸ĞÍºÅ, NULL: ²»Éú³É»Øµ÷º¯Êı¡£
+// ÉùÃ÷²¢³õÊ¼»¯ÁËÒ»¸öÀàĞÍÎª`SOCKHANDLE`µÄ±äÁ¿`ArmSocket`£¬³õÊ¼ÖµÎª-1¡£
+// Service_Arm_Socket_StartÁ¬½Ó»úĞµ±Û, 192.168.1.20: »úĞµ±ÛIPµØÖ·£¬ 8080: Óë»úĞµ±Û½¨Á¢Á¬½ÓµÄ¶Ë¿ÚºÅ, 5000: ½ÓÊÕ³¬Ê±Ê±¼ä
+// ´òÓ¡»úĞµ±ÛÊÇ·ñÁ¬½Ó³É¹¦µÄĞÅÏ¢
+
+    //float force[6] = { 0 };
+    float a[6] = { 0 };
+    float joint[7] = { 0 };
+
+    uint16_t arm_Err;
+    uint16_t sys_Err;
+    Pose pose;
+
+    double diff_px = 0;
+    double diff_py = 0;
+    double diff_pz = 0;
+    double diff_oa = 0;
+    double diff_ob = 0;
+    double diff_og = 0;
+
+
+    //// Á¬½Ó³É¹¦ºó»ñÈ¡µ±Ç°³õÊ¼Î»×Ë
+    m_pApi->Service_Get_Current_Arm_State(ArmSocket, joint, &pose, &arm_Err, &sys_Err);
+    Pose initPose = pose;
+    std::cout << "init pose" << initPose.position.x << " " << initPose.position.y << " " << initPose.position.z << " "
+        << initPose.euler.rx << " " << initPose.euler.ry << " " << initPose.euler.rz << std::endl;
+
+    //³õÊ¼»¯Á¦·´À¡Ö÷ÊÖ
+    // center of workspace
+    double nullPose[DHD_MAX_DOF] = { 0.0, 0.0, 0.0, // base  (translations)
+                                    0.0, 0.0, 0.0, // wrist (rotations)
+                                    0.0 };          // gripper
+
+    // message
+    cout << "Force Dimension - Auto Center Gravity " << dhdGetSDKVersionStr() << endl;
+    cout << "Copyright (C) 2001-2021 Force Dimension" << endl;
+    cout << "All Rights Reserved." << endl;
+
+    // open the first available device
+    if (drdOpen() < 0)
+    {
+        cout << "error: cannot open device (" << dhdErrorGetLastStr() << ")" << endl;
+        dhdSleep(2.0);
+        return -1;
     }
-}
 
-int main(int argc, char *argv[]) {
-    // åº”ç”¨ç¨‹åºå¯¹è±¡
-    QApplication app(argc, argv);
+    // print out device identifier
+    if (!drdIsSupported())
+    {
+        cout << "unsupported device" << endl;
+        cout << "exiting..." << endl;
+        dhdSleep(2.0);
+        drdClose();
+        return -1;
+    }
+     printf ("%s haptic device detected\n\n", dhdGetSystemName ());
 
-    // åˆ›å»ºçª—å£
-    QWidget *window = new QWidget(); // åˆ›å»ºä¸€ä¸ªçª—å£å¯¹è±¡
-    QString title = "æœºæ¢°è‡‚å›¾å½¢åŒ–";   // è®¾ç½®çª—å£æ ‡é¢˜
-    win_set(window, title, 500, 600);
-    Window_Init(window);
+    // perform auto-initialization
+    if (!drdIsInitialized() && drdAutoInit() < 0)
+    {
+        cout << "error: auto-initialization failed (" << dhdErrorGetLastStr() << ")" << endl;
+        dhdSleep(2.0);
+        return -1;
+    }
+    else if (drdStart() < 0)
+    {
+        cout << "error: regulation thread failed to start (" << dhdErrorGetLastStr() << ")" << endl;
+        dhdSleep(2.0);
+        return -1;
+    }
 
-    // è®¾ç½®æŒ‰é’®
-    QPushButton *button_start = new QPushButton();    // åˆ›å»ºä¸€ä¸ªæŒ‰é’®
-    QPushButton *button_close = new QPushButton();    // åˆ›å»ºä¸€ä¸ªæŒ‰é’®
-    QPushButton *button_initsigma = new QPushButton();// åˆ›å»ºä¸€ä¸ªæŒ‰é’®
-    QPushButton *button_connect = new QPushButton();  // åˆ›å»ºä¸€ä¸ªæŒ‰é’®
-    QString name_start = "è¿æ¥æœºæ¢°è‡‚";       // è®¾ç½®æŒ‰é’®åå­—
-    QString name_close = "å…³é—­æœºæ¢°è‡‚";       // è®¾ç½®æŒ‰é’®åå­—
-    QString name_initsigma = "åˆå§‹åŒ–åŠ›åé¦ˆæ‰‹";// è®¾ç½®æŒ‰é’®åå­—
-    QString name_achieve = "æ§åˆ¶æœºæ¢°è‡‚";     // è®¾ç½®æŒ‰é’®åå­—
-    button_set(window, button_start, name_start, 100, 200);
-    button_set(window, button_close, name_close, 300, 200);
-    button_set(window, button_initsigma, name_initsigma, 100, 300);
-    button_set(window, button_connect, name_achieve, 100, 400);
+    // move to center
+    drdMoveTo(nullPose);
 
-    // è¿æ¥æŒ‰é’®ä¸å‡½æ•°åŠŸèƒ½
-    QObject::connect(button_start, &QPushButton::clicked, window, &RM_start);
-    QObject::connect(button_close, &QPushButton::clicked, window, &RM_close);
-    QObject::connect(button_initsigma, &QPushButton::clicked, window, &Force_init);
-    QObject::connect(button_connect, &QPushButton::clicked, window, &Connect);
-//    QObject::connect(button_connect, &QPushButton::clicked, window, &Basic_pose::basic_pose);
+    // stop regulation thread (but leaves forces on)
+    drdStop(true);
 
-    window->show();     // æ˜¾ç¤ºçª—å£
-    return app.exec();  // è¿›å…¥æ¶ˆæ¯å¾ªç¯
+    // Get initial pose
+    double init_px, init_py, init_pz, init_oa, init_ob, init_og;
+    dhdGetPositionAndOrientationRad(&init_px, &init_py, &init_pz, &init_oa, &init_ob, &init_og);
+    cout << "init_ (" << init_px << " " << init_py << " " << init_pz << ") m | rad (" << init_oa << " " << init_ob << " " << init_og << ")" << endl;
+
+    Pose cur_pose;
+    double cur_px, cur_py, cur_pz, cur_oa, cur_ob, cur_og;
+
+    // apply zero force
+    while (!done) {
+
+        // apply zero force
+        if (dhdSetForceAndTorqueAndGripperForce(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0) < DHD_NO_ERROR) {
+            printf("error: cannot set force (%s)\n", dhdErrorGetLastStr());
+            done = 1;
+        }
+
+        t1 = dhdGetTime();
+        if ((t1 - t0) > REFRESH_INTERVAL) {
+
+            // retrieve information to display
+            freq = dhdGetComFreq();
+
+
+            // write down position
+            if (dhdGetPosition(&px, &py, &pz) < 0) {
+                printf("error: cannot read position (%s)\n", dhdErrorGetLastStr());
+                done = 1;
+            }
+            if (dhdGetForce(&fx, &fy, &fz) < 0) {
+                printf("error: cannot read force (%s)\n", dhdErrorGetLastStr());
+                done = 1;
+            }
+
+            // Retrieve current pose
+            dhdGetPositionAndOrientationRad(&cur_px, &cur_py, &cur_pz, &cur_oa, &cur_ob, &cur_og);
+            cout << "cur_ (" << cur_px << " " << cur_py << " " << cur_pz << ") m | rad (" << cur_oa << " " << cur_ob << " " << cur_og << ")" << endl;
+
+            // Calculate difference     ¼ÆËãµÄÇø±ğ
+            diff_px = (cur_px)-(init_px);
+            diff_py = (cur_py)-(init_py);
+            diff_pz = (cur_pz)-(init_pz);
+            diff_oa = (cur_oa)-(init_oa);
+            diff_ob = (cur_ob)-(init_ob);
+            diff_og = (cur_og)-(init_og);
+
+            init_px = cur_px;
+            init_py = cur_py;
+            init_pz = cur_pz;
+            init_oa = cur_oa;
+            init_ob = cur_ob;
+            init_og = cur_og;
+
+
+            // ½«Ö÷²Ù×÷ÊÖµÄÎ»ÒÆÏòÁ¿×ª»»µ½»úĞµ±ÛµÄ×ø±êÏµÖĞ
+            double transformedVector[3];
+            transformedVector[0] = rotationMatrix[0][0] * diff_px + rotationMatrix[0][1] * diff_py + rotationMatrix[0][2] * diff_pz;
+            transformedVector[1] = rotationMatrix[1][0] * diff_px + rotationMatrix[1][1] * diff_py + rotationMatrix[1][2] * diff_pz;
+            transformedVector[2] = rotationMatrix[2][0] * diff_px + rotationMatrix[2][1] * diff_py + rotationMatrix[2][2] * diff_pz;
+
+
+            // Convert double values to float   ½«Ë«¾«¶ÈÖµ×ª»»Îª¸¡µãÊı
+            float f_diff_px = static_cast<float>(transformedVector[0]);
+            float f_diff_py = static_cast<float>(transformedVector[1]);
+            float f_diff_pz = static_cast<float>(transformedVector[2]);
+            float f_diff_oa = static_cast<float>(diff_oa);
+            float f_diff_ob = static_cast<float>(diff_ob);
+            float f_diff_og = static_cast<float>(diff_og);
+
+
+            cur_pose.position.x = initPose.position.x + (k * f_diff_px);
+            cur_pose.position.y = initPose.position.y + (k * f_diff_py);
+            cur_pose.position.z = initPose.position.z + (k * f_diff_pz);
+            cur_pose.euler.rx = initPose.euler.rx + f_diff_oa;
+            cur_pose.euler.ry = initPose.euler.ry + f_diff_ob;
+            cur_pose.euler.rz = initPose.euler.rz + f_diff_og;
+
+
+            ret = Movej_P_Cmd(ArmSocket, cur_pose, 20, 0, RM_BLOCK);
+
+
+            /*m_pApi->Service_Get_Current_Arm_State(ArmSocket, joint, &pose, &arm_Err, &sys_Err);
+            Pose curPose = pose;
+            std::cout << "pose" << curPose.position.x << " " << curPose.position.y << " " << curPose.position.z << " "
+               << curPose.euler.rx << " " << curPose.euler.ry << " " << curPose.euler.rz << std::endl;*/
+
+            initPose.position.x = cur_pose.position.x;
+            initPose.position.y = cur_pose.position.y;
+            initPose.position.z = cur_pose.position.z;
+            initPose.euler.rx = cur_pose.euler.rx;
+            initPose.euler.ry = cur_pose.euler.ry;
+            initPose.euler.rz = cur_pose.euler.rz;
+            t0 = t1;
+
+        }
+    }
+    return 0;
 }

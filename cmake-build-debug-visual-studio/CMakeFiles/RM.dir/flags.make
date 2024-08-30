@@ -4,7 +4,7 @@
 # compile CXX with D:/software/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe
 CXX_DEFINES = 
 
-CXX_INCLUDES = -ID:\software\CLionProjects\RM_QT_API\cmake-build-debug-visual-studio\RM_autogen\include -ID:\software\CLionProjects\RM_QT_API\include\robot -ID:\software\CLionProjects\RM_QT_API\include\haptic -ID:\software\CLionProjects\RM_QT_API\Application\Inc
+CXX_INCLUDES = -ID:\software\CLionProjects\rm\include
 
 CXX_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
 
