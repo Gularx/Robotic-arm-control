@@ -1,4 +1,3 @@
-D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/RM_QT_API.dir
-D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/edit_cache.dir
-D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/rebuild_cache.dir
-D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio/CMakeFiles/RM_QT_API_autogen.dir
+D:/software/CLionProjects/rm/cmake-build-debug-visual-studio/CMakeFiles/rm.dir
+D:/software/CLionProjects/rm/cmake-build-debug-visual-studio/CMakeFiles/edit_cache.dir
+D:/software/CLionProjects/rm/cmake-build-debug-visual-studio/CMakeFiles/rebuild_cache.dir

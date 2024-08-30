@@ -1,5 +1,4 @@
-"D:\software\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - NMake Makefiles" -S D:\software\CLionProjects\RM_QT_API -B D:\software\CLionProjects\RM_QT_API\cmake-build-debug-visual-studio
--- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
--- Configuring done (0.2s)
+"D:\software\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - NMake Makefiles" -S D:\software\CLionProjects\rm -B D:\software\CLionProjects\rm\cmake-build-debug-visual-studio
+-- Configuring done (0.0s)
 -- Generating done (0.0s)
--- Build files have been written to: D:/software/CLionProjects/RM_QT_API/cmake-build-debug-visual-studio
+-- Build files have been written to: D:/software/CLionProjects/rm/cmake-build-debug-visual-studio
